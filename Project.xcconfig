@@ -1,0 +1,30 @@
+//
+//  Shared.xcconfig
+//  essentiaX
+//
+//  Created by martin hermant on 03/09/15.
+//  Copyright (c) 2015 martin hermant. All rights reserved.
+//
+
+
+//THE PATH TO THE ROOT OF OUR OF PATH RELATIVE TO THIS PROJECT
+//THIS NEEDS TO BE DEFINED BEFORE CoreOF.xcconfig IS INCLUDED
+ESSENTIA_PATH = ../Essentia/
+ESSENTIA_FFT = ACCELERATE
+
+
+// This indicate the possible unused file in essentia from a list of used algorithms (nested include are handeled)
+
+ESSENTIA_PRUNE = LowLevelSpectralExtractor MonoLoader AudioWriter YamlOutput
+
+//THIS HAS ALL THE HEADER AND LIBS FOR OF CORE
+#include "../essentiaX/Essentia_Core.xcconfig"
+//#include "EssentiaRT.xcconfig"
+
+
+OTHER_LDFLAGS = $(ESSENTIA_LIBS) $(ESSENTIA_FRAMEWORKS)
+HEADER_SEARCH_PATHS = $(ESSENTIA_HEADERS) ../flext/src
+
+
+// statically linked
+//-L/usr/local/lib -lpng -lz -lm -lvo-aacenc -lfaac -lmp3lame -llzma -lswresample -lx264 -lxvidcore
