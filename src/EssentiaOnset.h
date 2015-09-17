@@ -29,7 +29,7 @@
 
 
 // multiply novelty function and threshold for easier parametriation, the true computation is Not Multiplied, only inputs and outputs
-#define NOVELTY_MULT 1000000
+#define NOVELTY_MULT 1000
 #define FRAMESIZE 4096
 
 

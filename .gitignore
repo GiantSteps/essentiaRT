@@ -1,6 +1,8 @@
 
 .DS_Store
 Build/
+bin/
+
 DerivedData
 *.pbxuser
 !default.pbxuser

@@ -134,6 +134,7 @@ float EssentiaOnset::compute(vector<Real>& audioFrameIn, vector<Real>& output){
         network->runStep();
     }
     dynamic_cast<AccumulatorAlgorithm * >(superFluxP)->finalProduce();
+
 //    network->runStep();
 
 

@@ -178,9 +178,11 @@ void EssentiaSFX::aggregate(){
     if(aggrPool.getRealPool().size()>0 && aggrPool.value<Real>("loudness.mean")>0){
         // call should stop for accumulator algorithms
 //        network->runStack(true);
-    while(!gen->isEmpty()){
-        network->runStep();
-    }
+
+
+        
+        network->runStack(true);
+    
     }
     
     //rescaling values afterward
