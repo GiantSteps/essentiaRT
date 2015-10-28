@@ -12,7 +12,7 @@
 ESSENTIA_PATH = ../Essentia/
 ESSENTIA_FFT = ACCELERATE
 
-
+maxsdk = /Users/Tintamar/SDKs/MaxSDK-6.1.4/c74support
 // This indicate the possible unused file in essentia from a list of used algorithms (nested include are handeled)
 
 ESSENTIA_PRUNE = LowLevelSpectralExtractor MonoLoader AudioWriter YamlOutput
@@ -23,7 +23,7 @@ ESSENTIA_PRUNE = LowLevelSpectralExtractor MonoLoader AudioWriter YamlOutput
 
 
 OTHER_LDFLAGS = $(ESSENTIA_LIBS) $(ESSENTIA_FRAMEWORKS)
-HEADER_SEARCH_PATHS = $(ESSENTIA_HEADERS) ../flext/src
+HEADER_SEARCH_PATHS = $(ESSENTIA_HEADERS) ../flext/src $(maxSDK)
 
 
 // statically linked
