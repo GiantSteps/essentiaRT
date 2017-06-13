@@ -1,7 +1,12 @@
-FFTW example written using flext. Below are instructions for installing flext on Mavericks.
+Binary Instructions
+===================
+Download the release patches from:
+https://github.com/GiantSteps/essentiaRT/releases
 
-INSTALL FLEXT
-============
+There should be some help patches to get you started on using the object.
+
+Compilation Instructions
+========================
 
 Easiest way is the command line, there is an Xcode project but the command line is easier and
 installs everything neatly into /usr/local
